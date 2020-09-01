@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.c-app__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 1200px;
+  width: 100%;
+  height: 100vh;
+}
+
+.c-github-searcher__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.c-github-searcher__header {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.c-github-searcher__logo {
+  height: 50px;
+}
+
+.c-github-searcher__hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 16px;
+}
+
+.c-github-searcher__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.c-github-searcher__description {
+  color: #888;
+  font-size: 18px;
+}
+
+.c-github-searcher__form-wrapper {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.c-github-searcher__search-input {
+  margin-right: 12px;
+  padding: 16px;
+  width: 350px;
+  border: 1px solid #bbb;
+  font-size: 16px;
+}
+
+.c-github-searcher__type-select {
+  padding: 16px;
+  width: 150px;
+  border: 1px solid #bbb;
+  background-color: #fff;
+  color: #888;
+  font-size: 16px;
+}
+
+.c-search-results__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: calc(100% - 200px);
+}
+
+.c-search-results__card {
+  display: flex;
+  flex-basis: calc((100% / 3) - 8px);
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  padding: 8px;
+  height: 200px;
+  border: 1px solid #bbb;
+
+  @media screen and (max-width: 768px) {
+    flex-basis: calc((100% / 2) - 8px);
+  }
+
+  th,
+  td {
+    text-align: left;
+  }
+
+  img {
+    margin-right: 8px;
+    height: 50px;
+  }
+}
+
+.c-search-results__loading {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: calc(100% - 200px);
+}
